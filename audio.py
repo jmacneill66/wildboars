@@ -11,14 +11,14 @@ SOUNDS_PATH = os.path.join(BASE_PATH, "assets", "sounds")
 
 # Load sounds
 SOUNDS = {
-    "lazer_shot": pygame.mixer.Sound("assets/sounds/lazer.wav"),
+    "lazer": pygame.mixer.Sound("assets/sounds/lazer.wav"),
     "pig_squeal": pygame.mixer.Sound("assets/sounds/pig_squeal.wav"),
     "pigs_grazing": pygame.mixer.Sound("assets/sounds/pigs_grazing.wav"),
     "game_over": pygame.mixer.Sound("assets/sounds/game_over.wav")
 }
 
 # Adjust volumes (normalize sound levels)
-SOUNDS["lazer_shot"].set_volume(1)
+SOUNDS["lazer"].set_volume(1)
 SOUNDS["pig_squeal"].set_volume(0.1)
 SOUNDS["pigs_grazing"].set_volume(0.7)
 SOUNDS["game_over"].set_volume(1)
