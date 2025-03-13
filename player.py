@@ -103,7 +103,7 @@ class Player(CircleShape):
 
         # 🔫 Shooting
         if keys[pygame.K_SPACE] or mouse_buttons[0]:  # Space or Left-click
-            play_sound("lazer_shot")
+            play_sound("lazer")
             self.shoot()
 
         # 🔄 Toggle Image with 'R' Key or Right-click
