@@ -10,3 +10,10 @@ Shoot: Spacebar or Left-click
 Reverse direction: R or Right-click
 Rotate Left: A or Mousewheel
 Rotate Right: D or Mousewheel
+
+Scoring:
+large boar: 10 pts.
+medium boar: 20 pts.
+small boar: 30 pts.
+
+"You have 1 life, use it wisely!"
