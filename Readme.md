@@ -1,0 +1,12 @@
+# wildboars
+
+Wildboars is a not so popular video arcade game from the 1980's.
+Our team is revamping the codebase in hopes that it will emerge as a new leader in the gaming industry.
+Suggestions welcome!
+
+Key/Mouse Controls:
+Move: Mouse
+Shoot: Spacebar or Left-click
+Reverse direction: R or Right-click
+Rotate Left: A or Mousewheel
+Rotate Right: D or Mousewheel
