@@ -47,7 +47,6 @@ def main():
 
     dt = 0
     game_over_timer = 0  # ⏳ Track delay before quitting
-
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

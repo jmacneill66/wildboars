@@ -4,6 +4,7 @@ from constants import *
 from circleshape import CircleShape
 from shot import Shot
 from audio import *
+import time
 
 
 class Player(CircleShape):
@@ -35,6 +36,7 @@ class Player(CircleShape):
         self.game_over_font = pygame.font.Font(None, 150)
         self.countdown_alpha = 255
         self.countdown_color = (255, 255, 255)
+        self.last_countdown_update = 0
 
     def draw(self, screen):
         """ Draw the rotated player image on the screen """
@@ -78,12 +80,16 @@ class Player(CircleShape):
 
         # Countdown logic
         if self.countdown_time > 0:
-            self.countdown_alpha -= 5  # Fade effect
-            if self.countdown_alpha <= 0:
-                self.countdown_alpha = 255
+            current_time = pygame.time.get_ticks()
+            if current_time - self.last_countdown_update > 1000:  # 1 second
                 self.countdown_time -= 1
+                self.last_countdown_update = current_time
                 self.countdown_color = (
                     255, 0, 0) if self.countdown_time % 2 == 0 else (255, 255, 255)
+            # Calculate alpha based on remaining time in this second
+            time_in_current_second = current_time - self.last_countdown_update
+            self.countdown_alpha = 255 - \
+                int(time_in_current_second * 0.255)  # Fade over
 
             return  # Prevent movement during countdown
 
