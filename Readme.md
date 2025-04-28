@@ -1,7 +1,7 @@
 # wildboars
 
 Wildboars is a not so popular video arcade game from the 1980's.
-Our team is revamping the codebase in hopes that it will emerge as a new leader in the gaming industry.
+Our team is revamping the codebase in hopes that it will emerge as a new leader in the gaming industry. (or perhaps not?)
 Suggestions welcome!
 
 Key/Mouse Controls:
